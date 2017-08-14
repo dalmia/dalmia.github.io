@@ -6,3 +6,8 @@ I am a final year undergraduate studying in IIT Guwahati. This is the repository
 
 - <a href = "http://dalmia.github.io/WannaPark/"><strong>WannaPark - Your Personal Parking Buddy</strong></a>
 - <a href = "http://dalmia.github.io/Quora-Question-Pairs/"><strong>Quora Question Pairs for Kaggle</strong></a>
+
+## Contact
+- [LinkedIn](http://linkedin.com/in/aman-dalmia)
+- [Github](http://github.com/dalmia)
+- [Medium](https://medium.com/@amandalmia18)

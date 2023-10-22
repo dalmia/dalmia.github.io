@@ -23,7 +23,7 @@ layout: home
 
 <p>I find a lot of solace in music and have been playing guitar for close to 8 years now, mostly within the four walls of my room. I practice fingerstyle and you can find some of my covers <a href="/covers">here</a>. </p>
 
-<p>I've also tried my hand at creating <a href="https://www.youtube.com/@chasingcuriosity5308">explainer videos</a> along with my cousin for a few non-fiction books that I found valuable. It was a great learning experience and gave me confidence that I can pursue it when I'm ready to commit more time.</p>
+<p>I've also tried my hand at creating <a href="https://www.youtube.com/@chasingcuriosity5308">explainer videos</a> along with my cousin for a few non-fiction books that I found valuable. It was a great learning experience and gave me confidence that I can pursue it when I'm ready to commit more time. I briefly <a href="https://amandalmia.substack.com/p/taking-the-first-stride-in-my-climate">experimented</a> with creating a climate community focused on India but realized that community building is not meant for me.</p>
 
 <p>In my previous life, I used to maintain a technical blog at <a href="https://medium.com/inveterate-learner" target="_blank">Medium</a>. Off late, I've shifted to sharing more personal stories over <a href="https://amandalmia.substack.com" target="_blank">Substack</a>. If some of them resonate with you or you'd like to share your thoughts with me, please send me an <a href="mailto:amandalmia18@gmail.com">email</a>. I'd love to hear from you!
 

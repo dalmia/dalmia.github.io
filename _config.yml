@@ -34,7 +34,6 @@ plugins:
   - jekyll-remote-theme
 
 header_pages:
-  - updates.md
   - highlights.md
   - mental_food.md
   - covers.md

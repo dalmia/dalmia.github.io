@@ -15,46 +15,60 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+        $(function () {
+            $("#subscribe").load("subscribe.html");
+        });
+    </script>
 </head>
 
 <body>
 
     <!-- Include the shared header -->
-    <iframe src="header.html"
-        style="width: 100%; border: none; height: 96px;"></iframe>
+    <!-- <div style="z-index: 20"><iframe src="header.html"
+            style="width: 100%; border: none; height: 96px;"></iframe></div> -->
 
-    <!-- idea: have a javascript animated loss function converging in the header? :p -->
-    <div id="dhead" class="container">
-        <div class="row">
-            <div id="dpic">
-                <img src="assets/me.jpeg" class="ppic">
-            </div>
-            <div id="ddesc">
-                <h1>Aman Dalmia</h1>
-                <h2>Lead ML Engineer, HyperVerge</h2>
-                <p style="width: 100%; color:rgb(96, 94, 94)">I love learning
-                    and
-                    building things
-                    👷🏽
-                </p>
-                <div id="dico">
-                    <a href="https://twitter.com/dalmiaman"><img
-                            src="assets/ctwitter.svg" class="iico"></a>
-                    <a href="https://github.com/dalmia"><img
-                            src="assets/cgithub.svg" class="iico"></a>
-                    <!-- <a href="https://amandalmia.substack.com"><img
+    <div id="header"></div>
+
+
+    <div style="z-index: 10">
+        <!-- idea: have a javascript animated loss function converging in the header? :p -->
+        <div id="dhead" class="container">
+            <div class="row">
+                <div id="dpic">
+                    <img src="assets/me.jpeg" class="ppic">
+                </div>
+                <div id="ddesc">
+                    <h1>Aman Dalmia</h1>
+                    <h2>Lead ML Engineer, HyperVerge</h2>
+                    <p style="width: 100%; color:rgb(96, 94, 94)">I love
+                        learning
+                        and
+                        building things
+                        👷🏽
+                    </p>
+                    <div id="dico">
+                        <a href="https://twitter.com/dalmiaman"><img
+                                src="assets/ctwitter.svg" class="iico"></a>
+                        <a href="https://github.com/dalmia"><img
+                                src="assets/cgithub.svg" class="iico"></a>
+                        <!-- <a href="https://amandalmia.substack.com"><img
                             src="assets/crss.svg" class="iico"></a>
                     <a href="https://amandalmia18.medium.com/"><img
                             src="assets/cmedium.svg" class="iico"></a> -->
-                    <a href="https://linkedin.com/in/aman-dalmia/"><img
-                            src="assets/clinkedin.svg" class="iico"></a>
-                    <a
-                        href="https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=2&gmla=AC6lMd9Wa-j6PZKrRwQWcuXHsQHtBrwMXTIcMuy8w_FISU7DJfCJlzqSaFqu6JHLwOsu9ijpv19L2Le9DcYIl4ck2s4c&user=HtN2XFEAAAAJ/"><img
-                            src="assets/cscholar.svg" class="iico"></a>
+                        <a href="https://linkedin.com/in/aman-dalmia/"><img
+                                src="assets/clinkedin.svg" class="iico"></a>
+                        <a
+                            href="https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=2&gmla=AC6lMd9Wa-j6PZKrRwQWcuXHsQHtBrwMXTIcMuy8w_FISU7DJfCJlzqSaFqu6JHLwOsu9ijpv19L2Le9DcYIl4ck2s4c&user=HtN2XFEAAAAJ/"><img
+                                src="assets/cscholar.svg" class="iico"></a>
+                    </div>
+                    <!-- <div id="demail"></div>  -->
+                    <!-- will reveal email -->
                 </div>
-                <!-- <div id="demail"></div>  -->
-                <!-- will reveal email -->
             </div>
         </div>
     </div>
@@ -85,7 +99,8 @@
             <div class="desc">
                 I returned to <a href="https://hyperverge.co/">HyperVerge</a>
                 after 5 years. Currently, I lead AI for <a
-                    href="https://hyperstart.com/">HyperStart</a>, a new legal
+                    href="https://hyperstart.com/">HyperStart</a>, a new
+                legal
                 co-pilot and building an AI tutor, <a
                     href="https://gitlab.com/hvacademy/sensai-ai/">SensAI</a>,
                 for our non-profit arm <a
@@ -147,11 +162,13 @@
             <div class="desc">
                 Joined an early-stage startup named <a
                     href="https://wisdomcircle.com/">WisdomCircle</a> as a
-                Consultant Tech Lead. Built the first version of product with
+                Consultant Tech Lead. Built the first version of product
+                with
                 <a
                     href="https://in.linkedin.com/in/joanna-shruti-sundharam-15507949/">Joanna</a>
                 and the rest of the team to help retirees find meaningful
-                things to do post-retirement and set up the engineering team.
+                things to do post-retirement and set up the engineering
+                team.
                 <div class="hassets"
                     style="height:304px; margin: 20px 0 10px 0;">
                     <div class="hasset" style="top: 0; left: 0; width: 50%;">
@@ -190,41 +207,51 @@
                         Fellows</a>, a non-profit founded in 2010 by <a
                         href="https://in.linkedin.com/in/akshayasaxena">Akshay
                         Saxena</a> that works
-                    with students from low-income backgrounds to support them in
+                    with students from low-income backgrounds to support
+                    them in
                     getting into good engineering and medical colleges,
                     providing
                     a pathway out of
-                    engineering and medical colleges, providing a pathway out of
+                    engineering and medical colleges, providing a pathway
+                    out of
                     poverty. We built several <a
                         href="https://github.com/avantifellows">open-source</a>
                     products to improve how our students learn. Notably, we
                     built
                     <a href="https://www.plio.in/">Plio</a>, an open-source
                     tool
-                    that converts any YouTube video into an interactive lesson
+                    that converts any YouTube video into an interactive
+                    lesson
                     plan and provides educators all the
-                    learning data at the level of each student. It increased the
-                    completion rates on our videos by 5x and was used by > 40000
-                    students in Haryana during the COVID-19 pandemic. We were
+                    learning data at the level of each student. It increased
+                    the
+                    completion rates on our videos by 5x and was used by >
+                    40000
+                    students in Haryana during the COVID-19 pandemic. We
+                    were
                     part of the 7th Cohort of <a
                         href="https://www.thenudge.org/centre-for-social-innovation/social-entrepreneurship/incubator/">The
                         Nudge Incubator</a> and won the <a
                         href="https://tools-competition.org/winner/plio/#">Tools
                         Competition</a> by
-                    Schmidt Futures under the "Accelerating Learning" track in
+                    Schmidt Futures under the "Accelerating Learning" track
+                    in
                     2022-23. Plio continues to be used by Avanti Fellows to
                     support students in their learning and is being used by
                     other non-profits like <a
                         href="https://www.theapprenticeproject.org/">The
                         Apprentice Project (TAP)</a> in their
                     programs as well.<br><br>
-                    I built the first version of Avanti's Quizzing Engine, an
-                    open-source platform for students to practice and prepare
+                    I built the first version of Avanti's Quizzing Engine,
+                    an
+                    open-source platform for students to practice and
+                    prepare
                     for their exams. The quizzing engine is in active
                     development and regularly being used by thousands of
                     students. <a href="https://youtu.be/vlPYxi5xJL8">Here</a> is
                     a demo of the quizzing engine in action!<br><br>In the
-                    journey, we got to go to incredible places and meet amazing
+                    journey, we got to go to incredible places and meet
+                    amazing
                     people. We even gave a presentation only using memes.
                     Visiting Tehri for a retreat with other tech-focused
                     non-profits is
@@ -298,12 +325,15 @@
                 </a> in KDD), estimating the weight of newborns from a
                 video to identify low-birth weight babies (accepted as <a
                     href="https://openaccess.thecvf.com/content/CVPR2024W/CVPM/html/Khandelwal_NurtureNet_A_Multi-task_Video-based_Approach_for_Newborn_Anthropometry_CVPRW_2024_paper.html">best
-                    paper</a> at Computer Vision for Physiological Measurement
+                    paper</a> at Computer Vision for Physiological
+                Measurement
                 (CVPM) Workshop, CVPR 2024) and screening for
                 COVID-19 using cough sounds (<a
-                    href="https://arxiv.org/abs/2106.03851">paper</a> published
+                    href="https://arxiv.org/abs/2106.03851">paper</a>
+                published
                 at ICLR 2021 AI for Public Health and Machine
-                Learning for Preventing and Combating Pandemics Workshops, <a
+                Learning for Preventing and Combating Pandemics Workshops,
+                <a
                     href="https://github.com/WadhwaniAI/cough-against-covid/tree/main">code</a>).
                 <div class="hassets"
                     style="height:304px; margin: 20px 0 10px 0;">
@@ -349,8 +379,10 @@
             <div class="desc">
                 B.Tech at IIT Guwahati with a major in Electronics &
                 Communication Engineering. But I hardly focused on my major
-                until my curriculum included a lot of math and ML. I got into
-                programming in my first year [android development], worked with
+                until my curriculum included a lot of math and ML. I got
+                into
+                programming in my first year [android development], worked
+                with
                 a lot of startups on campus, started (and <a
                     href="https://amandalmia18.medium.com/10-lessons-from-failing-in-my-startup-ec5abfb7a651">failed</a>)
                 my own startup
@@ -358,7 +390,8 @@
                 learning on my own, making open-source <a
                     href="https://github.com/scikit-learn/scikit-learn/pulls?q=is%3Apr+author%3Adalmia+is%3Aclosed+review%3Aapproved">contributions</a>
                 to scikit-learn, working with Prof. <a
-                    href="https://www.ee.iitb.ac.in/~asethi/">Amit Sethi</a> on
+                    href="https://www.ee.iitb.ac.in/~asethi/">Amit Sethi</a>
+                on
                 applying deep
                 learning to predict cancer recurrence using histopathology
                 images, working with Prof. <a
@@ -388,7 +421,8 @@
                 <div class="card">
                     <div class="ccimg"><img src="assets/ctoconv.jpg">
                     </div>
-                    <div class="cdesc">State of LLMs in 2024 @ Non-Profit CTO
+                    <div class="cdesc">State of LLMs in 2024 @ Non-Profit
+                        CTO
                         Convergence (<a
                             href="https://docs.google.com/presentation/d/1gDGAI83pPAA0t8-foig-VPgGPPvwy4_ze8uzVsH-5eE/pub?start=false&loop=false&delayms=3000">slides</a>)
                     </div>
@@ -396,7 +430,8 @@
                 <div class="card">
                     <div class="ccimg"><img src="assets/llmsprint.jpg">
                     </div>
-                    <div class="cdesc">Learnings from building an AI tutor @ LLM
+                    <div class="cdesc">Learnings from building an AI tutor @
+                        LLM
                         Sprint (<a
                             href="https://docs.google.com/presentation/d/1jCtmN0Uc1WmKiIk_2ezFOHb_wGNRPp4KalJbd6fYybM/pub?start=false&loop=false&delayms=3000">slides</a>)
                     </div>
@@ -409,8 +444,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="ccimg"><img src="assets/tehribeauty.jpg"></div>
-                    <div class="cdesc">Building open-source products for govt.
+                    <div class="ccimg"><img src="assets/tehribeauty.jpg">
+                    </div>
+                    <div class="cdesc">Building open-source products for
+                        govt.
                         school students (<a
                             href="https://avantifellows-tehri.my.canva.site">slides</a>)
 
@@ -421,7 +458,8 @@
                         <div class="ccimg"><img src="assets/pod2.jpg">
                         </div>
                     </a>
-                    <div class="cdesc">Practical AI, Living with ADHD and more @
+                    <div class="cdesc">Practical AI, Living with ADHD and
+                        more @
                         Democratizing AI
                     </div>
                 </div>
@@ -776,10 +814,13 @@
                     </a>
                 </div>
                 <div class="pub-venue">CVPM Workshop, CVPR 2024</div>
-                <div class="pub-authors">Yash Khandelwal, Mayur Arvind, Sriram
-                    Kumar, Ashish Gupta, Sachin Kumar Danisetty, Piyush Bagad,
+                <div class="pub-authors">Yash Khandelwal, Mayur Arvind,
+                    Sriram
+                    Kumar, Ashish Gupta, Sachin Kumar Danisetty, Piyush
+                    Bagad,
                     Anish
-                    Madan, Mayank Lunayach, Aditya Annavajjala, Abhishek Maiti,
+                    Madan, Mayank Lunayach, Aditya Annavajjala, Abhishek
+                    Maiti,
                     Sansiddh Jain, Aman Dalmia, Namrata Deka, Jerome White,
                     Jigar
                     Doshi, Angjoo Kanazawa, Rahul Panicker, Alpan Raval,
@@ -791,10 +832,12 @@
             <div class="pub">
                 <div class="pub-title"><a
                         href="https://arxiv.org/abs/2106.03851">Impact of
-                        data-splits on generalization: Identifying COVID-19 from
+                        data-splits on generalization: Identifying COVID-19
+                        from
                         cough and context</a></div>
                 <div class="pub-venue">ICLR 2021 (workshop)</div>
-                <div class="pub-authors">Makkunda Sharma, Nikhil Shenoy, Jigar
+                <div class="pub-authors">Makkunda Sharma, Nikhil Shenoy,
+                    Jigar
                     Doshi, Piyush Bagad, Aman Dalmia, Parag Bhamare, Amrita
                     Mahale,
                     Saurabh Rane, Neeraj Agrawal, Rahul Panicker</div>
@@ -803,13 +846,15 @@
             <div class="pub">
                 <div class="pub-title"><a
                         href="https://dl.acm.org/doi/abs/10.1145/3394486.3403363">Pest
-                        management in cotton farms: an AI-system case study from
+                        management in cotton farms: an AI-system case study
+                        from
                         the
                         global south</a></div>
                 <div class="pub-venue">2020</div>
                 <div class="pub-authors">Aman Dalmia, Jerome White, Ankit
                     Chaurasia,
-                    Vishal Agarwal, Rajesh Jain, Dhruvin Vora, Balasaheb Dhame,
+                    Vishal Agarwal, Rajesh Jain, Dhruvin Vora, Balasaheb
+                    Dhame,
                     Raghu Dharmaraju, Rahul Panicker
                 </div>
             </div>
@@ -822,7 +867,8 @@
                         images
                         Captioning</a></div>
                 <div class="pub-venue">2020 (Journal)</div>
-                <div class="pub-authors">Siva Teja Kakileti, Aman Dalmia, Geetha
+                <div class="pub-authors">Siva Teja Kakileti, Aman Dalmia,
+                    Geetha
                     Manjunath
                 </div>
             </div>
@@ -833,9 +879,11 @@
                         the Chou’s
                         5-steps rule to predict splice junctions with
                         interpretable
-                        bidirectional long short-term memory networks</a></div>
+                        bidirectional long short-term memory networks</a>
+                </div>
                 <div class="pub-venue">2020 (Journal)</div>
-                <div class="pub-authors">Aparajita Dutta, Aman Dalmia, R Athul,
+                <div class="pub-authors">Aparajita Dutta, Aman Dalmia, R
+                    Athul,
                     Kusum Kumari Singh, Ashish Anand
                 </div>
             </div>
@@ -956,12 +1004,9 @@
 
     </div>
 
-    <iframe src="footer.html"
-        style="width: 100%; height: 300px; border: none;"></iframe>
+    <div id="subscribe"></div>
 
     <br><br><br><br><br><br><br><br><br><br><br>
-
-
 
 
     <!-- attempt hiding from spambots :p -->

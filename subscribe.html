@@ -11,12 +11,20 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-navigation ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+
 </head>
 
 <body>
 
-    <footer class="container"
-        style="width: 80%; height: 100%; border: none; padding: 0px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div class="container"
+        style="width: 50%; height: 100%; border: none; padding: 0px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <p style="color:dimgray"> I write about my learnings from building AI
             products along with
             anything else I'm learning across various topics including
@@ -27,6 +35,6 @@
             <script async data-uid="63f3c1ebdc"
                 src="https://aman-dalmia.ck.page/63f3c1ebdc/index.js"></script>
         </div>
-    </footer>
+    </div>
 
 </body>

@@ -6,6 +6,12 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Aman Dalmia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,6 +19,10 @@
 </head>
 
 <body>
+
+    <!-- Include the shared header -->
+    <iframe src="header.html"
+        style="width: 100%; border: none; height: 96px;"></iframe>
 
     <!-- idea: have a javascript animated loss function converging in the header? :p -->
     <div id="dhead" class="container">
@@ -22,17 +32,21 @@
             </div>
             <div id="ddesc">
                 <h1>Aman Dalmia</h1>
-                <h2>I love learning and building things 👷🏽</h2>
-                </h2>
+                <h2>Lead ML Engineer, HyperVerge</h2>
+                <p style="width: 100%; color:rgb(96, 94, 94)">I love learning
+                    and
+                    building things
+                    👷🏽
+                </p>
                 <div id="dico">
                     <a href="https://twitter.com/dalmiaman"><img
                             src="assets/ctwitter.svg" class="iico"></a>
                     <a href="https://github.com/dalmia"><img
                             src="assets/cgithub.svg" class="iico"></a>
-                    <a href="https://amandalmia.substack.com"><img
+                    <!-- <a href="https://amandalmia.substack.com"><img
                             src="assets/crss.svg" class="iico"></a>
                     <a href="https://amandalmia18.medium.com/"><img
-                            src="assets/cmedium.svg" class="iico"></a>
+                            src="assets/cmedium.svg" class="iico"></a> -->
                     <a href="https://linkedin.com/in/aman-dalmia/"><img
                             src="assets/clinkedin.svg" class="iico"></a>
                     <a
@@ -369,7 +383,7 @@
 
     <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
         <div id="featured-talks" class="container">
-            <div class="ctitle">talks</div>
+            <div id='talks' class="ctitle">talks</div>
             <div class="row">
                 <div class="card">
                     <div class="ccimg"><img src="assets/ctoconv.jpg">
@@ -458,8 +472,7 @@
             style="max-width:100%; border-radius:10px;">
     </div> -->
 
-    <div
-        style="background-color: #eee; padding-top: 1px; margin-top: 50px; padding-bottom: 30px;">
+    <!-- <div style="padding-top: 1px; padding-bottom: 30px;">
         <div class="container">
             <div class="ctitle">featured writing</div>
             <ul class="nodot">
@@ -656,16 +669,19 @@
 
             </ul>
         </div>
-    </div>
+    </div> -->
 
-    <div id="pet-projects" class="container">
-        <div class="ctitle">pet projects</div>
+    <div class="container" style="padding-bottom: 30px;">
+        <div id="projects" class=" ctitle">pet projects</div>
 
         <div class="project">
             <div class="pico"><img src="assets/geniegpt.webp"></div>
-            <div class="pdesc"><a href="https://www.geniebot.in/">Genie GPT </a>
-                Small web-app to upload your documents and give a shareable link
-                to anyone to chat with your documents. Very crappy. Built in the
+            <div class="pdesc"><a href="https://www.geniebot.in/">Genie GPT
+                </a>
+                Small web-app to upload your documents and give a shareable
+                link
+                to anyone to chat with your documents. Very crappy. Built in
+                the
                 early days of the release of GPT4. No longer maintained.
             </div>
             <div class="pend"></div>
@@ -674,10 +690,13 @@
         <div class="project">
             <div class="pico"><img src="assets/coreml.png"></div>
             <div class="pdesc"><a
-                    href="https://github.com/core-ml/coreml/">CoreML </a>
+                    href="https://github.com/core-ml/coreml/">CoreML
+                </a>
                 Built a generic end-to-end ML framework as an abstraction to
-                quickly run experiments. This was done right at the time when
-                PyTorch lightning was released and I didn't pursue it further.
+                quickly run experiments. This was done right at the time
+                when
+                PyTorch lightning was released and I didn't pursue it
+                further.
             </div>
             <div class="pend"></div>
         </div>
@@ -691,7 +710,8 @@
                     class="fa fa-star"></span>
                 on Github) was
                 my attempt along with <a
-                    href="https://ameyagodbole.github.io/">Ameya</a> to make the
+                    href="https://ameyagodbole.github.io/">Ameya</a> to make
+                the
                 <a href="https://www.deeplearningbook.org/">Deep Learning
                     Book</a>
                 easier to understand by providing more visualizations for
@@ -704,7 +724,8 @@
             <div class="pico"><img src="assets/dsrl.jpeg"></div>
             <div class="pdesc"><a
                     href="https://github.com/dalmia/David-Silver-Reinforcement-learning">Notes</a>
-                for the Reinforcement Learning course by David Silver along with
+                for the Reinforcement Learning course by David Silver along
+                with
                 implementation of various algorithms.
                 (> 700 <span class="fa fa-star"></span>
                 on Github).
@@ -730,98 +751,120 @@
                     href="https://www.amandalmia.com/WannaPark/">WannaPark</a>:
                 A real-time car parking (model) using
                 deep learning in a 2-week hackathon during my summer
-                internship at Qualcomm in 2017. We used deep learning to match
-                the combo of number plates + the driver's face to ensure a car
-                was not being stolen as well as object detection on CCTV camera
+                internship at Qualcomm in 2017. We used deep learning to
+                match
+                the combo of number plates + the driver's face to ensure a
+                car
+                was not being stolen as well as object detection on CCTV
+                camera
                 footage to automatically identify empty parking spots.
             </div>
             <div class="pend"></div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="ctitle">publications</div>
+    <div
+        style="background-color: #eee; padding-top: 1px; margin-top: 10px; padding-bottom: 30px;">
 
-        <div class="pub">
-            <div class="pub-title"><a
-                    href="http://proceedings.mlr.press/v70/shi17a/shi17a.pdf">NurtureNet:
-                    A Multi-task Video-based Approach for Newborn Anthropometry
-                </a>
+        <div class="container">
+            <div id="publications" class="ctitle">publications</div>
+
+            <div class="pub">
+                <div class="pub-title"><a
+                        href="http://proceedings.mlr.press/v70/shi17a/shi17a.pdf">NurtureNet:
+                        A Multi-task Video-based Approach for Newborn
+                        Anthropometry
+                    </a>
+                </div>
+                <div class="pub-venue">CVPM Workshop, CVPR 2024</div>
+                <div class="pub-authors">Yash Khandelwal, Mayur Arvind, Sriram
+                    Kumar, Ashish Gupta, Sachin Kumar Danisetty, Piyush Bagad,
+                    Anish
+                    Madan, Mayank Lunayach, Aditya Annavajjala, Abhishek Maiti,
+                    Sansiddh Jain, Aman Dalmia, Namrata Deka, Jerome White,
+                    Jigar
+                    Doshi, Angjoo Kanazawa, Rahul Panicker, Alpan Raval,
+                    Srinivas
+                    Rana, Makarand Tapaswi
+                </div>
             </div>
-            <div class="pub-venue">CVPM Workshop, CVPR 2024</div>
-            <div class="pub-authors">Yash Khandelwal, Mayur Arvind, Sriram
-                Kumar, Ashish Gupta, Sachin Kumar Danisetty, Piyush Bagad, Anish
-                Madan, Mayank Lunayach, Aditya Annavajjala, Abhishek Maiti,
-                Sansiddh Jain, Aman Dalmia, Namrata Deka, Jerome White, Jigar
-                Doshi, Angjoo Kanazawa, Rahul Panicker, Alpan Raval, Srinivas
-                Rana, Makarand Tapaswi
+
+            <div class="pub">
+                <div class="pub-title"><a
+                        href="https://arxiv.org/abs/2106.03851">Impact of
+                        data-splits on generalization: Identifying COVID-19 from
+                        cough and context</a></div>
+                <div class="pub-venue">ICLR 2021 (workshop)</div>
+                <div class="pub-authors">Makkunda Sharma, Nikhil Shenoy, Jigar
+                    Doshi, Piyush Bagad, Aman Dalmia, Parag Bhamare, Amrita
+                    Mahale,
+                    Saurabh Rane, Neeraj Agrawal, Rahul Panicker</div>
             </div>
-        </div>
 
-        <div class="pub">
-            <div class="pub-title"><a
-                    href="https://arxiv.org/abs/2106.03851">Impact of
-                    data-splits on generalization: Identifying COVID-19 from
-                    cough and context</a></div>
-            <div class="pub-venue">ICLR 2021 (workshop)</div>
-            <div class="pub-authors">Makkunda Sharma, Nikhil Shenoy, Jigar
-                Doshi, Piyush Bagad, Aman Dalmia, Parag Bhamare, Amrita Mahale,
-                Saurabh Rane, Neeraj Agrawal, Rahul Panicker</div>
-        </div>
-
-        <div class="pub">
-            <div class="pub-title"><a
-                    href="https://dl.acm.org/doi/abs/10.1145/3394486.3403363">Pest
-                    management in cotton farms: an AI-system case study from the
-                    global south</a></div>
-            <div class="pub-venue">2020</div>
-            <div class="pub-authors">Aman Dalmia, Jerome White, Ankit Chaurasia,
-                Vishal Agarwal, Rajesh Jain, Dhruvin Vora, Balasaheb Dhame,
-                Raghu Dharmaraju, Rahul Panicker
+            <div class="pub">
+                <div class="pub-title"><a
+                        href="https://dl.acm.org/doi/abs/10.1145/3394486.3403363">Pest
+                        management in cotton farms: an AI-system case study from
+                        the
+                        global south</a></div>
+                <div class="pub-venue">2020</div>
+                <div class="pub-authors">Aman Dalmia, Jerome White, Ankit
+                    Chaurasia,
+                    Vishal Agarwal, Rajesh Jain, Dhruvin Vora, Balasaheb Dhame,
+                    Raghu Dharmaraju, Rahul Panicker
+                </div>
             </div>
-        </div>
 
-        <div class="pub">
-            <div class="pub-title"><a
-                    href="https://www.tandfonline.com/doi/abs/10.1080/17686733.2019.1619355/">Exploring
-                    deep learning networks for tumour segmentation in infrared
-                    images
-                    Captioning</a></div>
-            <div class="pub-venue">2020 (Journal)</div>
-            <div class="pub-authors">Siva Teja Kakileti, Aman Dalmia, Geetha
-                Manjunath
+            <div class="pub">
+                <div class="pub-title"><a
+                        href="https://www.tandfonline.com/doi/abs/10.1080/17686733.2019.1619355/">Exploring
+                        deep learning networks for tumour segmentation in
+                        infrared
+                        images
+                        Captioning</a></div>
+                <div class="pub-venue">2020 (Journal)</div>
+                <div class="pub-authors">Siva Teja Kakileti, Aman Dalmia, Geetha
+                    Manjunath
+                </div>
             </div>
-        </div>
 
-        <div class="pub">
-            <div class="pub-title"><a
-                    href="https://www.sciencedirect.com/science/article/abs/pii/S0010482519304135">Using
-                    the Chou’s
-                    5-steps rule to predict splice junctions with interpretable
-                    bidirectional long short-term memory networks</a></div>
-            <div class="pub-venue">2020 (Journal)</div>
-            <div class="pub-authors">Aparajita Dutta, Aman Dalmia, R Athul,
-                Kusum Kumari Singh, Ashish Anand
+            <div class="pub">
+                <div class="pub-title"><a
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S0010482519304135">Using
+                        the Chou’s
+                        5-steps rule to predict splice junctions with
+                        interpretable
+                        bidirectional long short-term memory networks</a></div>
+                <div class="pub-venue">2020 (Journal)</div>
+                <div class="pub-authors">Aparajita Dutta, Aman Dalmia, R Athul,
+                    Kusum Kumari Singh, Ashish Anand
+                </div>
             </div>
         </div>
     </div>
 
+
     <div class="container">
-        <div class="ctitle">highlights</div>
+        <div id="highlights" class="ctitle">highlights</div>
 
         <ul style="padding-left: 10px;">
-            <li>Reading is my favourite hobby. I try to always carry a few books
-                everywhere I go so that I can steal an opportunity to read. I
+            <li>Reading is my favourite hobby. I try to always carry a few
+                books
+                everywhere I go so that I can steal an opportunity to read.
+                I
                 apologise to Mother Earth but I
-                need to feel the texture and smell of paper to enjoy reading.
+                need to feel the texture and smell of paper to enjoy
+                reading.
                 <a
                     href="https://www.goodreads.com/user/show/77961405-aman-dalmia">This
                 </a> is my goodreads profile which I'm too lazy to keep
                 updated. <a
                     href="https://square-wool-544.notion.site/1b046c11af16437ebf834cde818bb8c9?v=e3af5e2690a94439be5a87afc3199a72&pvs=4">Here</a>
-                is a more comprehensive list of all the books I have read/want
+                is a more comprehensive list of all the books I have
+                read/want
                 to
-                read/am reading but sadly this is almost always out of sync with
+                read/am reading but sadly this is almost always out of sync
+                with
                 reality too.
             </li>
             <li>I am a <a href="https://www.dhamma.org/en/index">Vipassana</a>
@@ -841,12 +884,14 @@
                 nutrition,
                 training, sleep, hydration, supplements and mindset), The
                 Huberman Lab <a
-                    href="https://www.youtube.com/@hubermanlab">podcast</a>, The
+                    href="https://www.youtube.com/@hubermanlab">podcast</a>,
+                The
                 Saket Gokhale's <a
                     href="https://www.youtube.com/channel/UCfgrg0SXgNkZ7rTbnZCp6tg">YouTube
                     channel</a></li>
             <li>I have completed the "Art of Clear Writing" <a
-                    href="https://indiauncut.com/clear-writing/">course</a> by
+                    href="https://indiauncut.com/clear-writing/">course</a>
+                by
                 Amit Varma. I hope I will use what I've learnt some
                 day.
             </li>
@@ -862,10 +907,13 @@
                 Learning For Action" <a
                     href="https://www.terra.do/climate-fellowship-learning-for-action/">course</a>
                 by
-                Terra.do. It gave me a deep, systemic understanding of climate
-                change which I was desperately seeking, especially as someone
+                Terra.do. It gave me a deep, systemic understanding of
+                climate
+                change which I was desperately seeking, especially as
+                someone
                 without any specialisation in environmental science. It also
-                gave me a community that cares about the problem, many of whom
+                gave me a community that cares about the problem, many of
+                whom
                 are actively working towards solving it in their own ways.
             </li>
 
@@ -873,8 +921,10 @@
                     href="https://www.youtube.com/@chasingcuriosity5308">YouTube
                     channel</a>
                 along with my cousin to
-                combine knowledge from non-fiction books with storytelling. We
-                got very encouraging feedback but it became impossible to manage
+                combine knowledge from non-fiction books with storytelling.
+                We
+                got very encouraging feedback but it became impossible to
+                manage
                 along with my full-time job. Might give it another shot.
             </li>
 
@@ -887,14 +937,18 @@
             </li>
             <li>Started <a href="https://linktr.ee/iitg.ai">IITG.ai</a>, a
                 study Group at IIT Guwahati focused on
-                learning AI in 2018. It has become an official club now solely
-                because of the efforts of every person who came after me, either
+                learning AI in 2018. It has become an official club now
+                solely
+                because of the efforts of every person who came after me,
+                either
                 as a secretary or a core team member.
             </li>
 
             <li>This website has been shamelessly ripped off from
-                Andrej Karpathy's <a href="https://karpathy.ai">website</a>. I
-                love the simplicity and the minimalism of his website and didn't
+                Andrej Karpathy's <a href="https://karpathy.ai">website</a>.
+                I
+                love the simplicity and the minimalism of his website and
+                didn't
                 see the need to reinvent the wheel. Everything good about it
                 comes from him. All mistakes are mine.</li>
         </ul>

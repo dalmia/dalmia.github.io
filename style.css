@@ -362,8 +362,16 @@ header {
     text-decoration: underline;
 }
 
+.subscribe-container {
+    width: 50%;
+}
+
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
+    .subscribe-container {
+        width: 80%;
+    }
+
     .nav-navigation ul {
         flex-direction: column;
         display: none;

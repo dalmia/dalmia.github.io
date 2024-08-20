@@ -35,6 +35,8 @@ plugins:
 
 header_pages:
   - highlights.md
+  - ai.md
+  - projects.md
   - mental_food.md
   - covers.md
 

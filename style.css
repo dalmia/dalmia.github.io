@@ -60,6 +60,12 @@ body {
 
 a {
     color: #900;
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.25em;
 }
 
 h1 {

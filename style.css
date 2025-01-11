@@ -220,7 +220,7 @@ hr {
     }
 }
 
-#pet-projects .row {
+#projects .row {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }

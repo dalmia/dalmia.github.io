@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My workflow for "vibe coding" with AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container" style="padding-bottom: 30px; padding-top: 20px;">
+        <h2>My workflow for "vibe coding" with AI</h2>
+
+        <h3>Before you build</h3>
+        <p>
+            Before jumping into coding, it has been super helpful for me to
+            clearly
+            list out
+            all the ideal user flows for different scenarios. Several people
+            have
+            helped me
+            a lot with that. As engineers, we are biased towards building. But
+            taking a step
+            back to just draw it all out without worrying about how we will
+            implement it is
+            very important.
+        </p>
+
+        <p>
+            Once you have the ideal user flows listed, begin with any one flow.
+            Since you
+            already know the steps that lie ahead, you can be very specific
+            about
+            what you
+            want the LLM/agent to do (I'll call them LLMs going forward). LLMs
+            are
+            (usually)
+            good at building something specific rather than building a whole
+            system
+            themselves. Sure, you can see many people demoing that from a single
+            prompt they
+            can build an entire game or app. From my experience, it is true that
+            they can
+            give a very good headstart when starting a new app. But once your
+            app
+            grows and
+            if you have a specific flow (and taste) in mind, then, breaking it
+            down
+            into
+            small steps and asking it to execute that individual step is what
+            has
+            worked for
+            me - sometimes in one shot and sometimes with multiple iterations of
+            me
+            specifying where it went wrong and reiterating what I actually asked
+            for.
+        </p>
+
+        <h3>Get started with Lovable</h3>
+        <p>
+            Lovable seemed the best out of v0/bolt/lovable when I tried a couple
+            of
+            the same
+            prompts on all of them in terms of aesthetics, design, flow of the
+            app
+            and in
+            general, matching what I had in my mind. It is still far from
+            perfect,
+            but at
+            least better than the rest.
+        </p>
+
+        <p>
+            I use it when I want different variations of how to build a
+            component,
+            or when I
+            already have a specific component from an app whose style I want to
+            copy. I just
+            provide Lovable with an example of my current app's design and ask
+            it to
+            adapt
+            that feature to match my app's theme.
+        </p>
+
+        <p>
+            Sometimes I ask it to build a feature entirely and provide different
+            variants so
+            that I can easily see what definitely looks ugly, what might work,
+            and
+            get some
+            good ideas. I do this by explicitly asking it to show me different
+            ways
+            in which
+            it can be done and to be creative with layout, style, orientation,
+            theme, etc.
+        </p>
+
+        <h3>Build for real with Cursor</h3>
+        <p>
+            Pull whatever looks like a decent start into Cursor if you are
+            starting
+            from
+            scratch or just take a screenshot of the component you liked and
+            pass
+            that to
+            Cursor. Cursor is where the real power is unlocked.
+        </p>
+
+        <p>There are a lot of things I have learned in my short time:</p>
+
+        <ul>
+            <li>
+                <strong>Chat vs Composer:</strong> I mostly use the Composer and
+                in
+                the
+                "agent" mode
+                in Composer (instead of "normal" mode). They removed this
+                distinction in
+                the
+                0.46 version of Cursor but I found that version to be very buggy
+                and so
+                did a
+                lot of people. Most of us reverted back to 0.45 and life has
+                been (more)
+                peaceful again. I occasionally use the Chat mode when I have to
+                ask something about the codebase but I don't want it to execute
+                any code.
+            </li>
+
+            <li>
+                <strong>File Tagging:</strong> Always include all relevant files
+                (tag them with @filename) that
+                you
+                think will
+                be needed to implement a feature or debug an error in every
+                prompt and
+                every
+                follow-up message. I cannot emphasize how important this is to
+                ensure it
+                does
+                not keep going on and on
+            </li>
+
+            <li>
+                <strong>Excess Edits:</strong> It often makes excess edits that
+                I didn't ask for. A lot of
+                times, it
+                makes
+                unnecessarily big changes when adding just two words would
+                suffice. I
+                have to
+                keep reminding Sonnet not to overcomplicate things and to keep
+                it
+                simple. Even
+                though this is explicitly included in Cursor rules, it continues
+                to make
+                this
+                mistake repeatedly.
+            </li>
+
+            <li>
+                <strong>Clear Instructions:</strong> You need to remember that
+                if what you have said can be
+                interpreted in
+                different
+                ways, it is going to be interpreted the wrong way a few times.
+                So, be
+                very clear
+                with what you want and make sure that you have covered all the
+                edge
+                cases that
+                it could spin off to and explicitly ask it to not do something
+                if you
+                have
+                noticed that there is a pattern to the mistakes it makes.
+            </li>
+
+            <li>
+                <strong>Frequent Commits:</strong> Commit very
+                frequently—ideally, as soon as any minor thing
+                works. It
+                tends to
+                delete random stuff that previously worked when you introduce
+                new
+                features. Set
+                up end-to-end testing to prevent that, but if testing isn't set
+                up, find
+                the
+                commit where something broke. You can pass the diff to it
+                directly,
+                saying,
+                "This change you made broke this feature. Fix it."
+            </li>
+
+            <li>
+                <strong>Cursor Rules:</strong> Cursor rules and project rules
+                exist and they do help a lot but
+                I'm not
+                entirely
+                sure exactly how effective they really are. Since everyone on
+                the
+                internet kept
+                saying that Cursor rules are important, I have added them but
+                don't know
+                precisely how much of a lift they give me.
+            </li>
+
+            <li>
+                <strong>Use Checkpoints:</strong> Cursor provides checkpoints
+                after every change it has made and
+                you can
+                restore
+                to any of those checkpoints. Use checkpoints frequently to roll
+                back
+                your code
+                if something it has added didn't work or broke something or the
+                change
+                was just
+                useless, not really fixing that bug or implementing that
+                feature. Once
+                you
+                identify common points of failure, update the prompt to ensure
+                it
+                doesn't repeat
+                the same mistakes.
+            </li>
+
+            <li>
+                <strong>Fresh Chats:</strong> Keep opening new chats after each
+                microfeature is completed;
+                otherwise,
+                unnecessary history and context get carried forward into
+                subsequent
+                features
+                that don't need it causing distraction and introducing potential
+                sources
+                of
+                error.
+            </li>
+
+            <li>
+                <strong>Model Selection:</strong> I usually stick with Sonnet
+                3.7 until it stops working, then
+                switch to
+                "thinking" if it keeps making the same mistake for a given task.
+                For
+                complicated
+                tasks, thinking is usually better, but using it in the regular
+                (non-thinking)
+                mode might be sufficient for simpler tasks given that the
+                thinking model
+                now
+                incurs 2 credits instead of 1.
+            </li>
+
+            <li>
+                <strong>Documentation Limits:</strong> Even though it accepts
+                URLs, I've found it's not great at
+                reading
+                documentation
+                from URLs, especially for less popular tools. Often, I've had to
+                manually read
+                documentation and then send specific code snippets from it—like,
+                "Hey,
+                this is
+                how it's done. Do it now."
+            </li>
+
+            <li>
+                <strong>Pinpoint Edits:</strong> Eventually, as your codebase
+                grows, you'll need to go into the
+                codebase
+                and
+                point out specific edits. Sometimes it makes complicated changes
+                across
+                5 files
+                when all it had to do was add 2 words to a line. So, if you
+                think
+                something is
+                simple but it is not able to do it, you are probably right. When
+                I
+                encounter
+                such cases, I just find the exact code section which needs a fix
+                and
+                make the
+                fix manually by reading the code (often for the first time).
+            </li>
+
+            <li>
+                <strong>Code Structure:</strong> I often glance quickly at the
+                code and files, then instruct it
+                to create
+                new
+                components and reuse them, because I've noticed it tends to
+                copy-paste
+                code
+                excessively instead of making reusable components. It is not
+                great at
+                structuring code. If you go on for too long without intervening
+                in
+                between to
+                periodically keep restructuring the code, it can be hard to
+                scale and
+                you will
+                likely introduce a lot of bugs that will be harder to find and
+                debug as
+                your
+                codebase grows (which happens very quickly when you use LLMs for
+                coding).
+            </li>
+        </ul>
+
+        <h3>Generate beautiful SVGs with Claude.ai</h3>
+        <p>
+            Claude.ai is great at generating beautiful SVGs as you work with its
+            Canvas.
+            Keep iterating and giving feedback and you can quickly get your own
+            custom SVG.
+        </p>
+
+        <h3>Create engaging copy with GPT4.5 / Claude.ai</h3>
+        <p>
+            Cursor is not that good at writing good copy for different
+            placeholders
+            or
+            different parts of the app where we need to communicate with the
+            users.
+            I found
+            a mix of GPT4.5 / Claude 3.7 the app to be great at understanding my
+            intent of
+            what I want to communicate and giving me good samples for the copy
+            that
+            I am now
+            using throughout the app.
+        </p>
+    </div>
+
+</body>
+
+</html>

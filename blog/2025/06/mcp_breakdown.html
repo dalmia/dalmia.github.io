@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My workflow for "vibe coding" with AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container" style="padding-bottom: 30px; padding-top: 20px;">
+        <h2>MCP for dummies</h2>
+
+        <p>
+            You have probably heard of MCP, which stands for “Model Context
+            Protocol”. But what does it actually mean?
+        </p>
+
+        <p>
+            𝗧𝗟;𝗗𝗥:
+            MCP lets ChatGPT use your tools, not just OpenAI’s. It’s not just
+            about
+            giving LLMs more information. It’s about giving them capabilities
+            that
+            make it work on your domain, data, and workflows.
+        </p>
+
+        <p>
+            After reading the docs and watching tutorials, I still wasn’t clear.
+        </p>
+
+        <p>
+            Everything clicked when I built an MCP server myself. This post is
+            my
+            attempt to spare you that confusion.
+        </p>
+
+        <p>
+            Let’s start from the basics. LLMs are limited.
+            By themselves, they don’t know what’s happening in the world right
+            now.
+            They don’t have access to your data. And they can’t act on your
+            behalf.
+        </p>
+
+        <p>
+            They’re trained until a fixed point in time. So, if you ask “Who
+            won the
+            IPL this year?”—they shouldn't know. But they do. How?
+        </p>
+
+        <p>
+            Tools.
+        </p>
+
+        <p>
+            When ChatGPT realises it can’t answer your question directly, it
+            triggers its search tool to fetch the most relevant posts on the
+            internet, reads them and answers based on that. The tool fills a
+            gap in
+            its abilities.
+        </p>
+
+        <p>
+            OpenAI has added many such tools inside ChatGPT. However, the tools
+            we
+            can use on ChatGPT are limited to the ones OpenAI adds. MCP changes
+            that. Since ChatGPT does not support MCP fully yet, we will use
+            Claude
+            going forward.
+        </p>
+
+        <p>
+            Let’s say you want Claude to check your expenses every morning and
+            send
+            you a summary if your monthly spending has crossed a threshold.
+        </p>
+
+        <p>
+            How can you do that?
+        </p>
+
+        <p>
+            𝟭. 𝗗𝗲𝗳𝗶𝗻𝗲 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝘁𝗼𝗼𝗹𝘀
+        </p>
+
+        <p>
+            Here, "tool" is just a small piece of software, a program or
+            script,
+            that performs a specific task for a specific input. You can think of
+            it
+            as something that can perform a specific type of query on your
+            database
+            (e.g. fetch, filter and sort data) or carry out an action like
+            sending a
+            message or generating a report.
+        </p>
+
+        <p>
+            𝟮. 𝗪𝗿𝗮𝗽 𝘁𝗵𝗲𝘀𝗲 𝘁𝗼𝗼𝗹𝘀 𝗶𝗻𝘀𝗶𝗱𝗲 𝗮𝗻 𝗠𝗖𝗣
+            𝘀𝗲𝗿𝘃𝗲𝗿
+        </p>
+        <p>
+            MCP is simply a protocol, a common language that defines how tools
+            should be defined and exposed so that Claude can talk to them. An
+            MCP
+            server is just a backend that follows this protocol and exposes your
+            tools like an API. It acts as the bridge between your tools and
+            Claude.
+        </p>
+
+        <p>
+            𝟯. 𝗖𝗼𝗻𝗻𝗲𝗰𝘁 𝗖𝗹𝗮𝘂𝗱𝗲 𝘁𝗼 𝘁𝗵𝗶𝘀 𝘀𝗲𝗿𝘃𝗲𝗿
+        </p>
+        <p>
+            Once connected, the LLM can decide “This looks like a job for one
+            of
+            your tools”, figure out which tool to use instead of the pre-built
+            ones,
+            pass in the right inputs, get the result, and respond back.
+        </p>
+
+        <p>
+            For example, if your tool gives Claude the ability to query your
+            internal database, the rest of your team can simply ask it for what
+            they
+            want to analyse and Claude will figure out the right tool to invoke,
+            get
+            back the data, write code to analyse that data, run the code and
+            generate plots or build entire webapps for them to use.
+        </p>
+
+        <p>
+            No dev time. No long waiting times. No context switching between
+            interfaces.
+        </p>
+
+        <p>
+            A tool could even be as advanced as an agent that calls other tools,
+            connected to other MCP servers, letting you chain together multiple
+            systems and build powerful workflows.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

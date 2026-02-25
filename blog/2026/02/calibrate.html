@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 Calibrate: open-source no-code simulation and evaluation studio
+        for voice agents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container" style="padding-bottom: 30px; padding-top: 20px;">
+
+        <h2> Calibrate: open-source no-code simulation and evaluation studio
+            for voice agents</h2>
+
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_VS8KQbBxKs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <p><b>"How do you actually test a voice agent?"</b></p>
+
+        <p>This was the first question I asked when I joined <a href="https://www.artpark.in/"
+                target="_blank">ARTPARK</a> (at IISc) 5 months back to build the infra for
+            solving problems in public health using voice agents with my mentor and friend, <a
+                href="https://www.jigarkdoshi.com/" target="_blank">Jigar</a>.</p>
+
+        <p>If you have ever deployed a voice agent, you are familiar with the pain: your voice agent works perfectly
+            in
+            demos but falls apart in production.</p>
+
+        <p>Across teams, the pattern is clear:</p>
+        <ul>
+            <li>Everyone struggles with evals due to lack of a standard testing stack</li>
+            <li>Traditional metrics (like WER) fail to capture what success means for an agent</li>
+            <li>Manual evals based on vibes won't scale</li>
+            <li>Existing solutions are incomplete, expensive and closed source</li>
+        </ul>
+
+
+        <p>We built <b><a href="https://calibrate.artpark.ai/" target="_blank">Calibrate</a></b> to fill this gap by
+            applying a proven
+            paradigm from software engineering to voice
+            agents:
+            unit tests + end-to-end tests.</p>
+
+        <h3>🎙️ Test the entire agent end-to-end</h3>
+        <p>Calibrate lets you simulate conversations using realistic user personas ("<b>who</b>" the user is) and
+            scenarios ("<b>what</b>" the user is doing). This lets you stress-test failure modes like users interrupting
+            the agent, being hesitant, giving partial
+            answers and more.</p>
+
+        <h3>⚙️ Test each component of your agent</h3>
+        <p>You don't have to guess which provider is right for you anymore. With Calibrate, you can benchmark
+            different
+            providers (like Google, Sarvam, ElevenLabs and more) for each component of your voice stack (STT, TTS,
+            LLM)
+            on your dataset.</p>
+
+        <h3>🔄 The path to reliability</h3>
+        <p>This creates a virtuous loop where you:</p>
+        <ul>
+            <li>Identify failures through simulations</li>
+            <li>Add them to your tests</li>
+            <li>Fix the responsible components</li>
+            <li>Verify that your fix works</li>
+        </ul>
+
+        <p>Over time, your test suite grows to capture the key failure modes.</p>
+
+        <p>You not only ship with confidence but ensure you never repeat a bug again.</p>
+
+        <p>Whether you are a PM or founder or ML engineer, Calibrate is built for you.</p>
+
+        <p><b>Start Calibrating now:</b> <a href="https://calibrate.artpark.ai">calibrate.artpark.ai</a></p>
+
+        <p>Calibrate comes with a CLI too:<br>
+            <code>pip install calibrate-agent</code>
+        </p>
+
+        <p>The best part: it is open-source. Forever.<br>
+            <a href="https://github.com/artpark-sahai-org/calibrate">https://github.com/artpark-sahai-org/calibrate</a>
+        </p>
+
+        <p>We are early and have a long roadmap ahead. If you are building voice agents and care about the future of
+            responsible Voice AI, let's do it together!</p>
+
+        <h3>Join our community 🤝</h3>
+        <p>Discord: <a href="https://lnkd.in/gpKaY_np">https://lnkd.in/gpKaY_np</a><br>
+            WhatsApp: <a href="https://lnkd.in/gXF3w4bR">https://lnkd.in/gXF3w4bR</a></p>
+
+
+
+    </div>
+
+</body>
+
+</html>

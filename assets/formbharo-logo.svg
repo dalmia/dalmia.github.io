@@ -1,0 +1,23 @@
+<svg width="330" height="104" viewBox="0 0 330 104" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="formbharo logo">
+  <title>formbharo</title>
+  <!-- mark: form-field stack with voice waveform in the active field -->
+  <rect x="20" y="22" width="70" height="16" rx="5" fill="none" stroke="#8B95A5" stroke-width="1.5"/>
+  <rect x="28" y="28.25" width="34" height="3.5" rx="1.75" fill="#8B95A5"/>
+
+  <rect x="20" y="44" width="70" height="16" rx="5" fill="none" stroke="#3B6FE0" stroke-width="2"/>
+  <g fill="#3B6FE0">
+    <rect x="28" y="49" width="3" height="6" rx="1.5"/>
+    <rect x="34.5" y="46.5" width="3" height="11" rx="1.5"/>
+    <rect x="41" y="49.5" width="3" height="5" rx="1.5"/>
+    <rect x="47.5" y="47.5" width="3" height="9" rx="1.5"/>
+    <rect x="54" y="49" width="3" height="6" rx="1.5"/>
+  </g>
+
+  <rect x="20" y="66" width="70" height="16" rx="5" fill="none" stroke="#8B95A5" stroke-width="1.5"/>
+  <rect x="28" y="72.25" width="22" height="3.5" rx="1.75" fill="#8B95A5"/>
+
+  <!-- wordmark -->
+  <text x="108" y="66" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="500">
+    <tspan fill="#1A1A2E">form</tspan><tspan fill="#3B6FE0">bharo</tspan>
+  </text>
+</svg>

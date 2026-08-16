@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates | Aman Dalmia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+        $(function () {
+            $("#subscribe").load("/subscribe.html");
+        });
+        $(function () {
+            $("#updates-list").load("/updates-entries.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container" style="padding-bottom: 30px;">
+        <div class="ctitle">updates</div>
+        <div id="updates-list" class="updates-list"></div>
+    </div>
+
+    <div id="subscribe"></div>
+</body>
+
+</html>

@@ -444,6 +444,45 @@ details[open] summary::before {
     border: 1px solid #999;
 }
 
+.updates-list {
+    margin-bottom: 10px;
+}
+
+.update-entry {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    margin-top: 0.5rem;
+    font-size: 15px;
+    color: rgb(96, 94, 94);
+}
+
+.update-date {
+    font-weight: bold;
+    color: #333;
+}
+
+.update-desc {
+    grid-column: span 5 / span 5;
+}
+
+.updates-more {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .update-entry {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        margin-top: 1rem;
+    }
+
+    .update-desc {
+        grid-column: span 1 / span 1;
+    }
+}
+
 .pub {
     font-size: 14px;
     border-left: 4px solid #aaa;

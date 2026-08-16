@@ -24,6 +24,11 @@
       $(function () {
         $('#subscribe').load('subscribe.html')
       })
+      $(function () {
+        $('#updates-list').load('updates-entries.html', function () {
+          $(this).children('.update-entry').slice(5).remove()
+        })
+      })
     </script>
   </head>
 
@@ -68,32 +73,32 @@
             <div style="width: 100%; color: rgb(96, 94, 94)">
               <div style="margin-bottom: 16px">
                 <div
-                  >AI engineer @
-                  <a href="https://www.agency.fund"
-                     target="_blank">The Agency Fund</a
+                  >Principal ML Engineer @
+                  <a href="https://www.artpark.in/health/#genai-health/"
+                     target="_blank">Artpark, IISc</a
                   ></div
                 >
                 <div style="margin-top: 4px"
-                  >Supporting evidence-based NGOs achieve cost-effective impact at scale.
-
-                  <br/>
-                  Core contributor to the <a href="https://eval.playbook.org.ai" target="_blank">AI evaluation playbook for the development sector</a>
-
-                  <br />Leading the <a href="https://theagencyfund.substack.com/p/building-better-benchmarks-for-health/" target="_blank">Health AI benchmarking initiative</a> to build strong benchmarks and shared standards for evaluating AI in public health.
+                  >Building <a href="https://calibrate.artpark.ai/" target="_blank">Calibrate</a>, an open-source AI agent evaluation tool for non-profits. Read more <a href="#calibrate">here</a>.
+                  <br/>Leading <a href="https://formbharo.artpark.ai/" target="_blank">FormBharo</a>: Turn any form into a voice agent that fills the form by simply speaking to the end user. Read more <a href="#formbharo">here</a>.<br/>
                   </div
                 >
               </div>
 
               <div style="margin-bottom: 16px">
                 <div
-                  >Principal ML Engineer @
-                  <a href="https://www.artpark.in/health/#genai-health/" 
-                     target="_blank">Artpark, IISc</a
+                  >Lead AI engineer @
+                  <a href="https://www.agency.fund"
+                     target="_blank">The Agency Fund</a
                   ></div
                 >
                 <div style="margin-top: 4px"
-                  >Building <a href="https://calibrate.artpark.ai/" target="_blank">Calibrate</a>, an open-source AI agent evaluation tool for non-profits. Read more <a href="#calibrate">here</a>.
-                  <br/>Leading <strong>FormBharo</strong>: Form filling voice agents for public health. Read more <a href="#formbharo">here</a>.<br/>
+                  >Supporting evidence-based NGOs achieve cost-effective impact at scale by helping them build and strengthen their AI evals and creating reusable tools, playbooks and standards for the sector.
+
+                  <br/>
+                  Core contributor to the <a href="https://eval.playbook.org.ai" target="_blank">AI evaluation playbook for the development sector</a>
+
+                  <br />Leading the <a href="https://theagencyfund.substack.com/p/building-better-benchmarks-for-health/" target="_blank">Health AI benchmarking initiative</a> to build strong benchmarks and shared standards for evaluating AI in public health.
                   </div
                 >
               </div>
@@ -561,7 +566,8 @@
             <br/><br/>
             <strong>Can an AI agent speak to the end user to fill forms instead?</strong>
             <br /><br />
-            [<a href="https://docs.google.com/presentation/d/e/2PACX-1vS-RRdHVVqK0MSAOFvU1bUPkYEFyXsj-cl86yOdG7N8aWq0qAK2EJox7XuaZ04RUaidZ-BF_XjKgh91/pub?start=false&loop=false&delayms=3000" target="_blank">Demo</a>]
+            [<a href="https://formbharo.artpark.ai/" target="_blank">Try it</a>]
+            [<a href="https://arxiv.org/abs/2608.06027" target="_blank">Paper</a>]
             [<a href="mailto:aman.dalmia@artpark.in?subject=Collaboration%20on%20FormBharo" target="_blank">Reach out for collaboration</a>]
           </div>
           <div class="pend"></div>
@@ -956,6 +962,33 @@
 
         <div class="pub">
           <div class="pub-title"
+            ><a href="https://arxiv.org/abs/2608.06027"
+               target="_blank">FormBharo: Designing and Evaluating a Voice Agent for
+              Conversational Form Filling in Rural India</a
+            ></div
+          >
+          <div class="pub-venue">arXiv 2026</div>
+          <div class="pub-authors"
+            >Aman Dalmia, Sanskriti Midha, Jigar Doshi</div
+          >
+        </div>
+
+        <div class="pub">
+          <div class="pub-title"
+            ><a href="https://arxiv.org/abs/2512.10780"
+               target="_blank">Script gap: Evaluating LLM triage on Indian languages in
+              native vs romanized scripts in a real world setting</a
+            ></div
+          >
+          <div class="pub-venue">arXiv 2025</div>
+          <div class="pub-authors"
+            >Manurag Khullar, Utkarsh Desai, Poorva Malviya, Aman Dalmia,
+            Zheyuan Ryan Shi</div
+          >
+        </div>
+
+        <div class="pub">
+          <div class="pub-title"
             ><a href="http://proceedings.mlr.press/v70/shi17a/shi17a.pdf"
                target="_blank">NurtureNet: A Multi-task Video-based Approach for Newborn
               Anthropometry
@@ -988,12 +1021,27 @@
 
         <div class="pub">
           <div class="pub-title"
+            ><a href="https://arxiv.org/abs/2009.08790"
+               target="_blank">Cough against COVID: Evidence of COVID-19 signature in cough
+              sounds</a
+            ></div
+          >
+          <div class="pub-venue">arXiv 2020</div>
+          <div class="pub-authors"
+            >Piyush Bagad, Aman Dalmia, Jigar Doshi, Arsha Nagrani, Parag
+            Bhamare, Amrita Mahale, Saurabh Rane, Neeraj Agarwal, Rahul
+            Panicker</div
+          >
+        </div>
+
+        <div class="pub">
+          <div class="pub-title"
             ><a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403363"
                target="_blank">Pest management in cotton farms: an AI-system case study from the
               global south</a
             ></div
           >
-          <div class="pub-venue">2020</div>
+          <div class="pub-venue">KDD 2020</div>
           <div class="pub-authors"
             >Aman Dalmia, Jerome White, Ankit Chaurasia, Vishal Agarwal, Rajesh
             Jain, Dhruvin Vora, Balasaheb Dhame, Raghu Dharmaraju, Rahul
@@ -1009,7 +1057,7 @@
               infrared images Captioning</a
             ></div
           >
-          <div class="pub-venue">2020 (Journal)</div>
+          <div class="pub-venue">Quantitative InfraRed Thermography Journal 2020</div>
           <div class="pub-authors"
             >Siva Teja Kakileti, Aman Dalmia, Geetha Manjunath
           </div>
@@ -1023,13 +1071,19 @@
               interpretable bidirectional long short-term memory networks</a
             >
           </div>
-          <div class="pub-venue">2020 (Journal)</div>
+          <div class="pub-venue">Computers in Biology and Medicine 2020</div>
           <div class="pub-authors"
             >Aparajita Dutta, Aman Dalmia, R Athul, Kusum Kumari Singh, Ashish
             Anand
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="container">
+      <div id="updates" class="ctitle">updates</div>
+      <div id="updates-list" class="updates-list"></div>
+      <p class="updates-more"><a href="/updates.html">View more →</a></p>
     </div>
 
     <div class="container">

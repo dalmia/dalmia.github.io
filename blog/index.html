@@ -29,18 +29,67 @@
             font-size: 0.8em;
             font-style: italic;
         }
+
+        .subscribe-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px 15px 20px;
+        }
+
+        .subscribe-row #subscribe .subscribe-container {
+            width: auto;
+            margin-bottom: 0;
+        }
+
+        .subscribe-check,
+        .subscribe-btn {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .subscribe-btn {
+                display: block;
+                width: fit-content;
+                margin: 20px auto 0;
+                padding: 6px 16px;
+                border: 1px solid #900;
+                border-radius: 4px;
+                color: #900;
+                cursor: pointer;
+            }
+
+            .subscribe-row {
+                display: none;
+            }
+
+            .subscribe-check:checked ~ .subscribe-row {
+                display: flex;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div id="header"></div>
 
-    <div id="subscribe" style="padding-top: 20px;"></div>
+    <input type="checkbox" id="show-subscribe" class="subscribe-check">
+    <label for="show-subscribe" class="subscribe-btn">Subscribe</label>
+
+    <div class="subscribe-row">
+        <div id="subscribe"></div>
+        <iframe src="https://evals4good.substack.com/embed" width="480" height="320"
+            style="border: 1px solid #EEE; background: white;" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <div class="container" style="padding-bottom: 30px; padding-top: 0px;">
         <p class="year">2026</p>
         <ul class="nodot">
 
+            <li> <a href="/blog/2026/08/testing-your-ai.html">Evaluation is all you need</a>
+            </li>
             <li> <a href="/blog/2026/02/ai_and_our_lives.html">The second-order effects of AI on our lives</a>
             </li>
             <li> <a href="/blog/2026/02/coding_agents.html">Grappling with coding agents as a programmer</a>

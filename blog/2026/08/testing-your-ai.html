@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation is all you need</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container" style="padding-bottom: 30px; padding-top: 20px;">
+
+        <h2>Evaluation is all you need</h2>
+
+        <p>Adding AI to your product has become ridiculously easy today. But after helping many teams over the last 15
+            months evaluate their new AI products, one pattern is hard to miss: they hardly ask if it is working as
+            rigorously as they must.</p>
+
+        <p>Even though AI is all we seem to hear about today, most software engineers have deep expertise building
+            deterministic systems: once you write the optimal SQL query or test that an API call works, it is guaranteed
+            to work every time you call it. Even so, building reliable deterministic systems is incredibly difficult.
+            What if the API you were calling crashed or someone changed the database table names without notifying you or
+            a myriad of other systemic and human failure modes.</p>
+
+        <p>AI is fundamentally non-deterministic. Consider something basic: the same input can give different outputs
+            every time you ask. Yet, because it looks like just another API call, it creates the illusion that AI
+            engineering is just a narrow extension of software engineering.</p>
+
+        <p>Evaluation, a cornerstone of machine learning, is often ignored. It baffled me at first, until I noticed the
+            missing mindset shift among those entering this new wave of AI. Partly because no one seems to talk about it.
+            It is not surprising then that most AI experiments don't move beyond pilots. Even worse is rolling out
+            despite negative results, simply to meet deployment targets.</p>
+
+        <p>The social sector operates in high-stakes domains: agriculture, health, education, livelihoods, poverty, to
+            name a few. A mistake can genuinely impact someone's life as they are often not well equipped to distinguish
+            an AI-generated response from an expert's advice. I am often asked questions like "whether the team should
+            move to the latest model released last week", but hardly "are we sure the AI is responding accurately for the
+            most critical inputs we receive". My response is always the same boring one: "only the evals can answer
+            that". I don't hear back from them after that, until the next model release.</p>
+
+        <p>My experiments (and evals) have convinced me that many frontier models are already capable enough to solve
+            many problems in the social impact space. The model is no longer the problem.</p>
+
+        <p>So, where are we lacking?</p>
+
+        <p>For our deterministic software systems, we have an established process of thinking about potential bugs when
+            building a new feature through PRDs. Writing test cases helps verify one's code is bug-free and prevents any
+            future changes from re-introducing a bug. When a new bug surfaces, we add a new test for it.</p>
+
+        <p>Are you thinking about the "bugs" in your AI system? Are you writing the "tests" to catch them and prevent
+            regressions? Are you "updating your tests" when "new bugs" are caught?</p>
+
+        <p>For a long time, software engineers dreaded writing tests. The same is happening again with AI. Removing the
+            friction in AI evals is what <a href="https://calibrate.artpark.ai/" target="_blank">Calibrate</a> aims to
+            do.</p>
+
+        <p>Open-source. Free. Self-hostable.</p>
+
+    </div>
+
+</body>
+
+</html>

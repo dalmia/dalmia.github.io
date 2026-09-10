@@ -513,6 +513,11 @@ details[open] summary::before {
 
 .pub-link {
     display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: none;
+    cursor: pointer;
     margin-top: 6px;
     margin-right: 6px;
     padding: 3px 10px;
@@ -527,35 +532,29 @@ details[open] summary::before {
 }
 
 .pub-media {
-    display: inline-block;
-    position: relative;
-}
-
-.pub-media summary {
-    list-style: none;
-    cursor: pointer;
-}
-
-.pub-media summary::-webkit-details-marker {
-    display: none;
-}
-
-.pub-media-list {
-    position: absolute;
-    z-index: 5;
-    left: 0;
-    margin-top: 4px;
-    padding: 6px 12px;
-    background-color: #fff;
+    max-width: 400px;
+    padding: 16px 20px;
     border: 1px solid #aaa;
-    border-radius: 3px;
-    white-space: nowrap;
+    border-radius: 4px;
 }
 
-.pub-media-list a {
+.pub-media::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pub-media-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.pub-media a {
     display: block;
-    padding: 3px 0;
+    padding: 4px 0;
     color: #333;
+}
+
+.pub-media form {
+    margin-top: 12px;
 }
 
 .pub-note {

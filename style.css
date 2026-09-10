@@ -25,6 +25,12 @@ body {
     }
 }
 
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -503,6 +509,103 @@ details[open] summary::before {
 .pub-authors {
     display: block;
     color: #000;
+}
+
+.pub-link {
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: none;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-right: 6px;
+    padding: 3px 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: #333;
+    text-decoration: none;
+}
+
+.pub-link:hover {
+    background-color: #ddd;
+}
+
+.pub-award {
+    display: block;
+    width: fit-content;
+    margin-bottom: 4px;
+    padding: 1px 8px;
+    border-radius: 10px;
+    background-color: #090;
+    color: #fff;
+    font-size: 12px;
+}
+
+.pub-media-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.pub-media {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    margin: 4px 0 0;
+    padding: 10px 14px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pub-media-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.pub-media-title {
+    font-weight: bold;
+}
+
+.pub-media-close {
+    margin-left: 20px;
+    padding: 0 4px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    line-height: 1;
+    color: #555;
+    cursor: pointer;
+}
+
+.pub-media-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 4px;
+}
+
+.pub-media-list a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.pub-media-list img {
+    width: 16px;
+    height: 16px;
+}
+
+.pub-note {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
 }
 
 .tul {

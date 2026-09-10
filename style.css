@@ -25,6 +25,12 @@ body {
     }
 }
 
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -503,6 +509,26 @@ details[open] summary::before {
 .pub-authors {
     display: block;
     color: #000;
+}
+
+.pub-link {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 3px 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: #333;
+    text-decoration: none;
+}
+
+.pub-link:hover {
+    background-color: #ddd;
+}
+
+.pub-note {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
 }
 
 .tul {

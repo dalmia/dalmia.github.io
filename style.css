@@ -526,6 +526,38 @@ details[open] summary::before {
     background-color: #ddd;
 }
 
+.pub-media {
+    display: inline-block;
+    position: relative;
+}
+
+.pub-media summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.pub-media summary::-webkit-details-marker {
+    display: none;
+}
+
+.pub-media-list {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    margin-top: 4px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.pub-media-list a {
+    display: block;
+    padding: 3px 0;
+    color: #333;
+}
+
 .pub-note {
     font-size: 13px;
     color: #555;

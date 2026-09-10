@@ -514,6 +514,7 @@ details[open] summary::before {
 .pub-link {
     display: inline-block;
     margin-top: 6px;
+    margin-right: 6px;
     padding: 3px 10px;
     border: 1px solid #aaa;
     border-radius: 3px;

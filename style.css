@@ -531,6 +531,16 @@ details[open] summary::before {
     background-color: #ddd;
 }
 
+.pub-award {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 8px;
+    border-radius: 10px;
+    background-color: #090;
+    color: #fff;
+    font-size: 12px;
+}
+
 .pub-media-wrap {
     display: inline-block;
     position: relative;

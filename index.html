@@ -1063,17 +1063,23 @@
           >
           <a class="pub-link" href="https://arxiv.org/abs/2009.08790" target="_blank" rel="noreferrer">View paper</a>
           <a class="pub-link" href="https://github.com/WadhwaniAI/cough-against-covid" target="_blank" rel="noreferrer">View code, model, data</a>
-          <button class="pub-link" onclick="this.nextElementSibling.showModal()">In the Media</button>
-          <dialog class="pub-media">
-            <div class="pub-media-title">In the Media</div>
-            <a href="https://spectrum.ieee.org/ai-recognizes-covid-19-in-the-sound-of-a-cough" target="_blank" rel="noreferrer">IEEE Spectrum</a>
-            <a href="https://indiaai.gov.in/case-study/using-ai-to-triage-suspected-covid-19-patients" target="_blank" rel="noreferrer">IndiaAI</a>
-            <a href="https://yourstory.com/2020/06/global-research-detect-covid-19-ai-cough-analysis" target="_blank" rel="noreferrer">YourStory</a>
-            <a href="https://www.deccanherald.com/technology/wadhwani-institute-to-design-ai-tool-to-screen-cough-to-detect-covid-19-888197.html" target="_blank" rel="noreferrer">Deccan Herald</a>
-            <a href="https://www.expresshealthcare.in/covid19-updates/anecdotal-evidence-suggests-that-a-covid-19-patients-cough-sounds-different-from-other-coughs/423963/" target="_blank" rel="noreferrer">Express Healthcare</a>
-            <a href="https://www.ipeglobal.com/artificial-intelligence-ai-powered-tool-for-covid-19-suspect-cases/" target="_blank" rel="noreferrer">IPE Global</a>
-            <form method="dialog"><button class="pub-link">Close</button></form>
-          </dialog>
+          <span class="pub-media-wrap">
+            <button class="pub-link" onclick="this.nextElementSibling.show()">In the Media</button>
+            <dialog class="pub-media">
+              <div class="pub-media-head">
+                <span class="pub-media-title">In the Media</span>
+                <button class="pub-media-close" onclick="this.closest('dialog').close()" aria-label="Close">&times;</button>
+              </div>
+              <div class="pub-media-list">
+              <a href="https://spectrum.ieee.org/ai-recognizes-covid-19-in-the-sound-of-a-cough" target="_blank" rel="noreferrer"><img src="https://www.google.com/s2/favicons?domain=spectrum.ieee.org&amp;sz=32" alt="" />IEEE Spectrum</a>
+              <a href="https://indiaai.gov.in/case-study/using-ai-to-triage-suspected-covid-19-patients" target="_blank" rel="noreferrer"><img src="https://www.google.com/s2/favicons?domain=indiaai.gov.in&amp;sz=32" alt="" />IndiaAI</a>
+              <a href="https://yourstory.com/2020/06/global-research-detect-covid-19-ai-cough-analysis" target="_blank" rel="noreferrer"><img src="https://www.google.com/s2/favicons?domain=yourstory.com&amp;sz=32" alt="" />YourStory</a>
+              <a href="https://www.deccanherald.com/technology/wadhwani-institute-to-design-ai-tool-to-screen-cough-to-detect-covid-19-888197.html" target="_blank" rel="noreferrer"><img src="https://www.google.com/s2/favicons?domain=www.deccanherald.com&amp;sz=32" alt="" />Deccan Herald</a>
+              <a href="https://www.expresshealthcare.in/covid19-updates/anecdotal-evidence-suggests-that-a-covid-19-patients-cough-sounds-different-from-other-coughs/423963/" target="_blank" rel="noreferrer"><img src="https://www.google.com/s2/favicons?domain=www.expresshealthcare.in&amp;sz=32" alt="" />Express Healthcare</a>
+              <a href="https://www.ipeglobal.com/artificial-intelligence-ai-powered-tool-for-covid-19-suspect-cases/" target="_blank" rel="noreferrer"><img src="https://www.google.com/s2/favicons?domain=www.ipeglobal.com&amp;sz=32" alt="" />IPE Global</a>
+              </div>
+            </dialog>
+          </span>
         </div>
 
         <div class="pub">

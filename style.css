@@ -531,30 +531,64 @@ details[open] summary::before {
     background-color: #ddd;
 }
 
-.pub-media {
-    max-width: 400px;
-    padding: 16px 20px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+.pub-media-wrap {
+    display: inline-block;
+    position: relative;
 }
 
-.pub-media::backdrop {
-    background-color: rgba(0, 0, 0, 0.4);
+.pub-media {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    margin: 4px 0 0;
+    padding: 10px 14px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pub-media-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 .pub-media-title {
     font-weight: bold;
-    margin-bottom: 8px;
 }
 
-.pub-media a {
-    display: block;
-    padding: 4px 0;
+.pub-media-close {
+    margin-left: 20px;
+    padding: 0 4px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    line-height: 1;
+    color: #555;
+    cursor: pointer;
+}
+
+.pub-media-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 4px;
+}
+
+.pub-media-list a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     color: #333;
+    white-space: nowrap;
 }
 
-.pub-media form {
-    margin-top: 12px;
+.pub-media-list img {
+    width: 16px;
+    height: 16px;
 }
 
 .pub-note {

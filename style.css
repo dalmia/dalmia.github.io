@@ -818,6 +818,18 @@ header {
     color: #666;
 }
 
+.talk-modal li span.talk-pill {
+    display: inline-block;
+    margin: 0 0 0 6px;
+    padding: 1px 9px;
+    font-size: 12px;
+    color: #070;
+    background-color: #eaf3ea;
+    border: 1px solid #cfe0cf;
+    border-radius: 10px;
+    vertical-align: 2px;
+}
+
 .talk-modal-close {
     position: absolute;
     top: 10px;

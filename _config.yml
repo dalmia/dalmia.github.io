@@ -33,13 +33,6 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
-header_pages:
-  - highlights.md
-  - ai.md
-  - projects.md
-  - mental_food.md
-  - covers.md
-
 minima:
   social_links:
     - { platform: github,  user_url: "https://github.com/dalmia" }
@@ -65,3 +58,12 @@ minima:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Kept in the repo, not published as pages on the site.
+exclude:
+  - CLAUDE.md
+  - ai.md
+  - covers.md
+  - highlights.md
+  - mental_food.md
+  - projects.md

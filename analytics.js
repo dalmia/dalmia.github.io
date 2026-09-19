@@ -5,7 +5,6 @@
 var GA_MEASUREMENT_ID = 'G-C2CL4NLBEF';
 
 var gaScript = document.createElement('script');
-gaScript.async = true;
 gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
 document.head.appendChild(gaScript);
 

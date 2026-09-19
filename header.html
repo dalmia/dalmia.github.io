@@ -56,7 +56,9 @@
         </div>
     </header>
 
-    <dialog id="talk-modal" class="talk-modal" onclick="if (event.target === this) this.close()">
+    <dialog id="talk-modal" class="talk-modal">
+        <button class="talk-modal-close" aria-label="Close"
+            onclick="this.closest('dialog').close()">&times;</button>
         <h2>Talk to me</h2>
         <ul>
             <li>
@@ -66,7 +68,7 @@
             </li>
             <li>
                 <a href="https://cal.com/amandalmia/1-1-discussion-with-aman-non-profits-only-30-mins"
-                    target="_blank">Working at a non-profit?</a>
+                    target="_blank">Book a discussion (non-profits only)</a>
                 <span>Would love to chat and learn about anything related to tech for social impact.</span>
             </li>
             <li>
@@ -77,10 +79,13 @@
             </li>
             <li>
                 <a href="https://cal.com/amandalmia/30min" target="_blank">Book a demo for Calibrate (paid)</a>
-                <span>Calibrate is an open-source tool for evaluating AI agents.</span>
+                <span>Calibrate is a platform for teams to evaluate AI agents and make them reliable. You can
+                    try it <a href="https://penseapp.vercel.app/" target="_blank">here</a> and a few learning
+                    resources are available <a href="https://calibrate.artpark.ai/learn" target="_blank">here</a>.
+                    Please go through them before booking a slot so that we can make the best use of our
+                    time.</span>
             </li>
         </ul>
-        <button class="talk-modal-close" onclick="this.closest('dialog').close()">Close</button>
     </dialog>
 
 </body>

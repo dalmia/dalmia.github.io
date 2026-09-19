@@ -776,6 +776,7 @@ header {
 }
 
 .talk-modal {
+    position: relative;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 24px 28px;
@@ -794,6 +795,7 @@ header {
 
 .talk-modal h2 {
     margin: 0 0 16px;
+    padding-right: 32px;
     font-size: 24px;
     font-weight: normal;
 }
@@ -817,15 +819,23 @@ header {
 }
 
 .talk-modal-close {
-    margin-top: 20px;
-    padding: 6px 14px;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
     font-family: inherit;
-    font-size: 15px;
-    color: #333;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    font-size: 28px;
+    line-height: 1;
+    color: #888;
+    background: none;
+    border: none;
     cursor: pointer;
+}
+
+.talk-modal-close:hover {
+    color: #000;
 }
 
 @media (max-width: 768px) {

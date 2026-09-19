@@ -651,6 +651,21 @@ header {
     /* Ensure header stays on top of other content */
 }
 
+/* on a laptop the header stays at the top of the screen while you scroll */
+@media (min-width: 769px) {
+    #header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    /* so a link to a section does not land it under the header */
+    .ctitle,
+    .project {
+        scroll-margin-top: 100px;
+    }
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;

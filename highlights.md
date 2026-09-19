@@ -28,7 +28,7 @@ permalink: /highlights/
 <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 0.5rem;">
 <b>20/12/21</b>
 <div style="grid-column: span 5 / span 5;">
-[course] <a href="https://amandalmia.substack.com/p/taking-the-first-stride-in-my-climate">Completed</a> the 12-week "Climate Change: Learning for Action" course by <a href="https://terra.do/">Terra.do</a>
+[course] <a href="https://amandalmia.substack.com/p/taking-the-first-stride-in-my-climate?utm_source=amandalmia.com&utm_medium=website">Completed</a> the 12-week "Climate Change: Learning for Action" course by <a href="https://terra.do/">Terra.do</a>
 </div>
 </div>
 
@@ -49,7 +49,7 @@ permalink: /highlights/
 <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 0.5rem;">
 <b>22/11/21</b>
 <div style="grid-column: span 5 / span 5;">
-[blog post] <a href="https://plio.substack.com/p/a-sprint-from-the-hills">Wrote</a> about a sprint of tech non-profits in Tehri we attended that gave us a lot of memories
+[blog post] <a href="https://plio.substack.com/p/a-sprint-from-the-hills?utm_source=amandalmia.com&utm_medium=website">Wrote</a> about a sprint of tech non-profits in Tehri we attended that gave us a lot of memories
 </div>
 </div>
 

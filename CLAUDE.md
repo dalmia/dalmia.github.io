@@ -8,7 +8,7 @@ Then add a line right under the post title, above the first paragraph, in
 smaller italics so it reads as a note and not as part of the post:
 
 ```html
-<p style="font-size: 0.85em; font-style: italic;">This post also appears on the <a href="https://calibrate.artpark.ai/blog/SLUG" target="_blank">Calibrate blog</a>.</p>
+<p style="font-size: 0.85em; font-style: italic;">This post also appears on the <a href="https://calibrate.artpark.ai/blog/SLUG?utm_source=amandalmia.com&utm_medium=website" target="_blank">Calibrate blog</a>.</p>
 ```
 
 If I say there is no Calibrate version yet, skip the link and tell me it is

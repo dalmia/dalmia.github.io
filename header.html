@@ -49,9 +49,48 @@
                     </li>
                     <li><a href="/index.html#updates">Updates</a></li>
                     <li><a href="/index.html#highlights">Highlights</a></li>
+                    <li><a href="/index.html#mentorship">Mentorship</a></li>
+                    <li class="nav-cta"><a href="#"
+                            onclick="document.getElementById('talk-modal').showModal(); return false;">Talk to me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <dialog id="talk-modal" class="talk-modal">
+        <button class="talk-modal-close" aria-label="Close"
+            onclick="this.closest('dialog').close()">&times;</button>
+        <h2>Talk to me</h2>
+        <ul>
+            <li>
+                <a href="https://cal.com/amandalmia/1-1-mentorship-with-aman" target="_blank">Book a mentorship
+                    call</a>
+                <span class="talk-desc">For young people starting out in tech, early in their career, or wanting
+                    to transition into social impact.</span>
+            </li>
+            <li>
+                <a href="https://cal.com/amandalmia/1-1-discussion-with-aman-non-profits-only-30-mins"
+                    target="_blank">Book a discussion (non-profits only)</a>
+                <span class="talk-desc">Would love to chat and learn about anything related to tech for social impact.</span>
+            </li>
+            <li>
+                Book a consulting call:
+                <a href="https://cal.com/amandalmia/1-1-consulting-with-aman-30" target="_blank">30 mins</a> or
+                <a href="https://cal.com/amandalmia/1-1-consulting-with-aman-60" target="_blank">60 mins</a>
+                <span class="talk-pill">Paid</span>
+                <span class="talk-desc">I help companies evaluate their AI products and make them reliable, refine their AI and
+                    product strategy, and train their teams on using AI effectively.</span>
+            </li>
+            <li>
+                <a href="https://cal.com/amandalmia/30min" target="_blank">Book a demo for Calibrate</a>
+                <span class="talk-pill">Paid</span>
+                <span class="talk-desc">Calibrate is a platform for teams to evaluate AI agents and make them reliable. You can
+                    try it <a href="https://calibrate.artpark.ai/" target="_blank">here</a> and a few learning
+                    resources are available <a href="https://calibrate.artpark.ai/learn" target="_blank">here</a>.
+                    Please go through them before booking a slot so that we can make the best use of our
+                    time.</span>
+            </li>
+        </ul>
+    </dialog>
 
 </body>

@@ -651,6 +651,21 @@ header {
     /* Ensure header stays on top of other content */
 }
 
+/* on a laptop the header stays at the top of the screen while you scroll */
+@media (min-width: 769px) {
+    #header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    /* so a link to a section does not land it under the header */
+    .ctitle,
+    .project {
+        scroll-margin-top: 100px;
+    }
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -712,6 +727,21 @@ header {
     height: 320px;
 }
 
+/* the two newsletter boxes, side by side */
+.subscribe-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 15px 20px;
+}
+
+.subscribe-row #subscribe .subscribe-container {
+    width: auto;
+    margin-bottom: 0;
+}
+
 /* Mobile navigation - original working CSS */
 @media (max-width: 768px) {
     .nav-navigation ul {
@@ -761,4 +791,97 @@ header {
 
 .role-detail li {
     margin-bottom: 3px;
+}
+
+.nav-navigation ul li.nav-cta a {
+    background-color: #900;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+
+.nav-navigation ul li.nav-cta a:hover {
+    text-decoration: none;
+    background-color: #700;
+}
+
+.talk-modal {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 24px 28px;
+    max-width: 520px;
+    width: calc(100% - 40px);
+    color: #333;
+}
+
+.talk-modal:focus {
+    outline: none;
+}
+
+.talk-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.talk-modal h2 {
+    margin: 0 0 16px;
+    padding-right: 32px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.talk-modal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.talk-modal li {
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+}
+
+.talk-desc {
+    display: block;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+.talk-pill {
+    display: inline-block;
+    margin: 0 0 0 6px;
+    padding: 1px 9px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #090;
+    border-radius: 10px;
+    vertical-align: 2px;
+}
+
+.talk-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 1;
+    color: #888;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.talk-modal-close:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .nav-navigation ul li.nav-cta a {
+        display: inline-block;
+        width: auto;
+    }
 }

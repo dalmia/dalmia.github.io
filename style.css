@@ -784,6 +784,10 @@ header {
     color: #333;
 }
 
+.talk-modal:focus {
+    outline: none;
+}
+
 .talk-modal::backdrop {
     background-color: rgba(0, 0, 0, 0.4);
 }

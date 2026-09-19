@@ -712,6 +712,21 @@ header {
     height: 320px;
 }
 
+/* the two newsletter boxes, side by side */
+.subscribe-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 15px 20px;
+}
+
+.subscribe-row #subscribe .subscribe-container {
+    width: auto;
+    margin-bottom: 0;
+}
+
 /* Mobile navigation - original working CSS */
 @media (max-width: 768px) {
     .nav-navigation ul {
@@ -811,21 +826,20 @@ header {
     border-top: 1px solid #eee;
 }
 
-.talk-modal li span {
+.talk-desc {
     display: block;
     margin-top: 4px;
     font-size: 14px;
     color: #666;
 }
 
-.talk-modal li span.talk-pill {
+.talk-pill {
     display: inline-block;
     margin: 0 0 0 6px;
     padding: 1px 9px;
     font-size: 12px;
-    color: #070;
-    background-color: #eaf3ea;
-    border: 1px solid #cfe0cf;
+    color: #fff;
+    background-color: #090;
     border-radius: 10px;
     vertical-align: 2px;
 }

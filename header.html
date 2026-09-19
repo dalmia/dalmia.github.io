@@ -49,9 +49,38 @@
                     </li>
                     <li><a href="/index.html#updates">Updates</a></li>
                     <li><a href="/index.html#highlights">Highlights</a></li>
+                    <li class="nav-cta"><a href="#"
+                            onclick="document.getElementById('talk-modal').showModal(); return false;">Talk to me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <dialog id="talk-modal" class="talk-modal" onclick="if (event.target === this) this.close()">
+        <h2>Talk to me</h2>
+        <ul>
+            <li>
+                <a href="https://cal.com/amandalmia/1-1-mentorship-with-aman" target="_blank">Book a mentorship
+                    call</a>
+                <span>30 mins. For anyone starting out in AI or trying to move into it.</span>
+            </li>
+            <li>
+                <a href="https://cal.com/amandalmia/1-1-discussion-with-aman-non-profits-only-30-mins"
+                    target="_blank">Working at a non-profit? Talk to me about your AI work</a>
+                <span>60 mins.</span>
+            </li>
+            <li>
+                Book a consulting call (paid):
+                <a href="https://cal.com/amandalmia/1-1-consulting-with-aman-30" target="_blank">30 mins</a> or
+                <a href="https://cal.com/amandalmia/1-1-consulting-with-aman-60" target="_blank">60 mins</a>
+                <span>For companies that need help with an AI project or want to upskill their team.</span>
+            </li>
+            <li>
+                <a href="https://cal.com/amandalmia/30min" target="_blank">Book a demo for Calibrate (paid)</a>
+                <span>30 mins. Calibrate is an open-source tool for evaluating AI agents.</span>
+            </li>
+        </ul>
+        <button class="talk-modal-close" onclick="this.closest('dialog').close()">Close</button>
+    </dialog>
 
 </body>

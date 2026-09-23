@@ -502,7 +502,7 @@ details[open] summary::before {
 }
 
 .pub-venue {
-    display: inline;
+    display: block;
     color: #090;
 }
 

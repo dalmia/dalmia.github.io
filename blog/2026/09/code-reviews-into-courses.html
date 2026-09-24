@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A new skill to turn code reviews into courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container" style="padding-bottom: 30px; padding-top: 20px;">
+
+        <h2>A new skill to turn code reviews into courses</h2>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qm82H12jYPM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <p>I had to migrate the codebase for one of my projects, moving <a href="https://github.com/pipecat-ai/pipecat"
+                target="_blank">Pipecat</a> from 1.2.1 to 1.8.1, and wanted to understand the implications of it. Going
+            through all the changes and their relevance was daunting.</p>
+
+        <p>So, I prompted Claude to generate a course for me to walk me through the changes module by module, with each
+            module broken into micro-lessons. It took me a bunch of iterations to get it right. Once done, it made my
+            review much easier, helped me understand the tradeoffs better and almost seemed fun (isn't learning always
+            fun?). Here is the <a href="https://claude.ai/artifact/Qdae8Z2pLig5c6HGVYubpN" target="_blank">course it
+                made for me</a>.</p>
+
+        <p>I have shared a <a href="https://github.com/dalmia/skills" target="_blank">skill</a> that you can use to get
+            the same experience for anything daunting you need to learn or review (given that we have become glorified
+            verifiers now) while avoiding the tedious process I had to go through.</p>
+
+    </div>
+
+</body>
+
+</html>

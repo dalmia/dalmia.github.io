@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 papers accepted to GlobalSouth AI at NeurIPS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container" style="padding-bottom: 30px; padding-top: 20px;">
+
+        <h2>3 papers accepted to GlobalSouth AI at NeurIPS</h2>
+
+        <p>It is refreshing to see many AI conferences prioritising deployment papers in the last couple of years and I
+            am happy to share 3 papers accepted to <a href="https://sites.google.com/view/globalsouthai-neurips26/home"
+                target="_blank">GlobalSouth AI</a> at NeurIPS this year. I will be in Sydney and would love to meet you
+            if you are interested in AI for social impact/AI evaluation/AI safety/AI for Global South too!</p>
+
+        <h3>1. <a href="/assets/papers/Formbharo-final.pdf" target="_blank">Model selection for Hindi form-filling voice
+                agents under noisy speech, cost and latency constraints</a></h3>
+
+        <p><i>With Sanskriti and Jigar, in collaboration with ARMMAN</i></p>
+
+        <p>We share how we evaluated a Hindi form-filling voice agent for enrolling pregnant mothers in rural India
+            without deploying to real users, using simulated calls built from our pilot failures. We test each component
+            in isolation and evaluate the agent end-to-end by chaining the components, showing how errors in speech
+            recognition on real-world audio by frontier models degrade the downstream task completion, and share how we
+            pick models trading off latency, cost and accuracy.</p>
+
+        <h3>2. <a href="/assets/papers/Noora-TRACE.pdf" target="_blank">Auditable Emergency Triage for Maternal and
+                Newborn Care in India</a></h3>
+
+        <p><i>With Shobhit, Dr. Niharika, Anubhav and Noora Health team members</i></p>
+
+        <p>Noora Health runs a WhatsApp service where nurses answer over 50,000 medical queries per month, including
+            emergency messages. Identifying these emergency messages is not straightforward and using a purely LLM-based
+            approach made it hard for domain experts to audit mistakes and iterate. So, we decomposed triaging into two
+            steps: an LLM that extracts symptoms and patient context from the query against a clinician-authored
+            vocabulary, and a deterministic rule engine that captures the scenarios that indicate an emergency. Not only
+            does the new system improve performance, it makes the entire pipeline easily auditable by domain experts
+            which resulted in a much faster error correction loop.</p>
+
+        <h3>3. <a href="/assets/papers/Noora-Zezhen-final.pdf" target="_blank">Evaluating the Early Deployment of a
+                GenAI Co-Pilot for Frontline Maternal and Newborn Health Communication: A Mixed-Methods Case Study from
+                India</a></h3>
+
+        <p><i>With Zezhen Wu, PhD and Noora Health team members</i></p>
+
+        <p>A case study evaluating how Noora Health's multilingual AI co-pilot for nurses affects their agency,
+            communication practices, and message quality in maternal and newborn health services in India.</p>
+
+        <p>Congrats to all my collaborators and grateful to <a href="https://www.artpark.in/" target="_blank">ARTPARK</a>
+            and <a href="https://www.agency.fund" target="_blank">The Agency Fund</a> for the opportunity to work on
+            these problems.</p>
+
+    </div>
+
+</body>
+
+</html>
